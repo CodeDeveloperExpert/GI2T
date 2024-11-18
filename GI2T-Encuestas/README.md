@@ -1,27 +1,60 @@
-# GI2TEncuestas
+## Aplicación de Gestión de Encuestas en Angular para el GI2T
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+### Descripción del Proyecto
+Este proyecto es una aplicación web desarrollada en Angular para la gestión de encuestas, preguntas y tipos de preguntas, con funcionalidades completas de CRUD (Create, Read, Update, Delete) en fase beta para el Grupo de Investigación e Innovación Tecnológica [GI2T](https://gi2t.org/inicio).
 
-## Development server
+### Características Principales
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### 1. Autenticación
+- Página de login con campos de usuario y contraseña
+- Redireccionamiento a página principal tras autenticación
 
-## Code scaffolding
+#### 2. Estructura de la Aplicación
+- Página principal (Home) con menú de navegación
+- Gestión de tres entidades principales:
+  * Encuestas
+  * Preguntas
+  * Tipo de Preguntas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### 3. Funcionalidades por Módulo
+- Listado de registros
+- Agregar nuevos registros
+- Editar registros existentes
+- Eliminar registros (con confirmación modal)
 
-## Build
+### Requerimientos Técnicos
+- Desarrollo en Angular
+- Estructura modular
+- Configuración de routing
+- Servicios para gestión de datos
+- Componentes reutilizables
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Tecnologías Utilizadas
+- Angular
+- TypeScript
+- HTML
+- CSS
 
-## Running unit tests
+### Instalación
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Clonar repositorio
+```bash
+git clone https://github.com/CodeDeveloperExpert/GI2T.git
+```
+#### Instalar dependencias
+```bash
+npm install
+```
 
-## Running end-to-end tests
+#### Iniciar servidor de desarrollo
+```bash
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Autores
+- Jonatan Ocoro Perea
+- Jaime Riascos Guapi
+- Danny Perlaza Herman
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Licencia
+Este proyecto está bajo la licencia GNU General Public License v3.0 - consulte el archivo LICENSE para más detalles.
