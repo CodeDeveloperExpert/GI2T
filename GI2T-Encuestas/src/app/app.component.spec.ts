@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'GI2T-Encuestas' title`, () => {
+  it(`should have the 'GI2T' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('GI2T-Encuestas');
+    expect(app.title).toEqual('GI2T');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, GI2T-Encuestas');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, GI2T');
   });
 });
