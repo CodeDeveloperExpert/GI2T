@@ -1,0 +1,43 @@
+{
+  "encuestas": [
+    {
+      "id": "1",
+      "nombre": "a title",
+      "descripcion": ""
+    },
+    {
+      "id": "2",
+      "nombre": "a title",
+      "descripcion": ""
+    },
+    {
+      "id": "3",
+      "nombre": "a title",
+      "descripcion": ""
+    }
+  ],
+  "preguntas": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "idencuestas": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "idencuestas": "1"
+    }
+  ],
+  "tipo-pregunta": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "idtipo-pregunta": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "idtipo-pregunta": "1"
+    }
+  ]
+}
