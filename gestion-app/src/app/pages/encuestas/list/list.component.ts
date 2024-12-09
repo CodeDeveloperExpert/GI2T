@@ -1,6 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit} from "@angular/core";
+import { ActivatedRoute, Router } from '@angular/router';
 import { EncuestasService } from "../../../services/encuestas.service";
-import { EncuestasModel } from "../../../models/encuestasModel";
+import { Encuestas } from "../../../models/encuestas";
 import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
@@ -14,12 +15,16 @@ import { FormsModule } from "@angular/forms";
   styleUrl: './list.component.sass'
 })
 export class ListComponent implements OnInit {
-public encuestasList: EncuestasModel [] = [];
+public encuestasList: Encuestas [] = [];
 string: any;
  
  
-  constructor(private encuestasService: EncuestasService) {
-  }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private encuestasService: EncuestasService
+  ) {}
+  
   ngOnInit() {
     this.encuestasService.getEncuestas().subscribe((res: any) => {
       console.log(res);
@@ -29,18 +34,15 @@ string: any;
   }
   deleteEncuestas(id: string) {
     // Eliminar de la lista local
-    this.encuestasList = this.encuestasList.filter((encuesta: EncuestasModel) => encuesta.id !== id);
+    this.encuestasList = this.encuestasList.filter((encuesta: Encuestas) => encuesta.id !== id);
   
     // Eliminar del servidor
-    this.encuestasService.deleteEncuestas(id).subscribe(
-      () => {
-        console.log('Encuesta eliminada con éxito');
-      },
-      (error) => {
-        console.error('Error al eliminar la encuesta:', error);
-        // Opcional: Revertir la eliminación local si falla en el servidor
-        //this.loadEncuestas();
-      }
-    );
+    this.encuestasService.deleteEncuestas(id).subscribe({
+      next: () => console.log('Encuesta eliminada con éxito'),
+      error: (error) => console.error('Error al eliminar la encuesta:', error)
+    });
+  }
+  back(): void {
+    this.router.navigate(['/home']);
   }
 }

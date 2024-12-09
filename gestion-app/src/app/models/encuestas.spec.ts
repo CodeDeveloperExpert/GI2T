@@ -1,7 +1,7 @@
-import { EncuestasModel } from './encuestasModel';
+import { Encuestas } from './encuestas';
 
 describe('Encuestas', () => {
   it('should create an instance', () => {
-    expect(new EncuestasModel()).toBeTruthy();
+    expect(new Encuestas()).toBeTruthy();
   });
 });

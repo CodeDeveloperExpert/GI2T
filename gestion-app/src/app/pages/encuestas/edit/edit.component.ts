@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./edit.component.sass']
 })
 export class EditComponent implements OnInit {
-  item: any = { id: '', nombre: '', totalrespondido: '' };
+  item: any = { id: '', nombre: '', descripcion: '' };
  
   constructor(
     private route: ActivatedRoute,

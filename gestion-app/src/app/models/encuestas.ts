@@ -1,4 +1,4 @@
-export class EncuestasModel {
+export class Encuestas {
   id: string = '';
   nombre: string = '';
   descripcion: string = '';

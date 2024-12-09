@@ -44,11 +44,28 @@ git clone https://github.com/CodeDeveloperExpert/GI2T.git
 #### Instalar dependencias
 ```bash
 npm install
+npm install json-server
+npm install bootstrap @popperjs/core
+npm install uuid
 ```
 
-#### Iniciar servidor de desarrollo
+#### En el archivo angular.json línea 34:
+```json
+"styles": [
+  "src/styles.sass",
+  "node_modules/bootstrap/scss/bootstrap.scss"
+],
+"scripts": [
+  "node_modules/@popperjs/core/dist/umd/popper.min.js",
+  "node_modules/bootstrap/dist/js/bootstrap.min.js",
+  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+]
+```
+
+#### Iniciar servidor de desarrollo en dos terminales diferentes
 ```bash
 ng serve
+npx json-server db.json
 ```
 
 ### Autores

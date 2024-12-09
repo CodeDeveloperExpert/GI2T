@@ -1,43 +1,33 @@
 {
   "encuestas": [
     {
-      "id": "1",
-      "nombre": "a title",
-      "descripcion": ""
-    },
-    {
-      "id": "2",
-      "nombre": "a title",
-      "descripcion": ""
-    },
-    {
-      "id": "3",
-      "nombre": "a title",
-      "descripcion": ""
+      "id": "36e644b0-c821-419c-8d01-b924709d04ee",
+      "nombre": "Encuesta para la recolección de firmas de estudiantes de noveno grado.",
+      "descripcion": "En la siguiente encuesta se recolectarán las determinadas firmas para el día de la afrocolombianidad para estudiantes de noveno grado. "
     }
   ],
   "preguntas": [
     {
-      "id": "1",
-      "text": "a comment about post 1",
-      "idencuestas": "1"
+      "id": "c0add09c-d7bd-4256-9519-a5e8c1248779",
+      "nombre": "Edad",
+      "descripcion": "Edad del estudiante encuestado."
     },
     {
-      "id": "2",
-      "text": "another comment about post 1",
-      "idencuestas": "1"
+      "id": "75659141-771f-46e9-955c-7c106d56790f",
+      "nombre": "Sexo",
+      "descripcion": "Describe el sexo del estudiante encuestado, ya sea Mujer u Hombre."
     }
   ],
   "tipo-pregunta": [
     {
-      "id": "1",
-      "text": "a comment about post 1",
-      "idtipo-pregunta": "1"
+      "id": "c9130d98-6cb8-4f41-bcab-04030a08d937",
+      "nombre": "Informativa",
+      "descripcion": "Brinda información del estudiante para hacer cálculos estadísticos y medidas de tendencia central."
     },
     {
-      "id": "2",
-      "text": "another comment about post 1",
-      "idtipo-pregunta": "1"
+      "id": "9cc85e44-70be-4172-824f-db33d3543b15",
+      "nombre": "Cuantitativa",
+      "descripcion": "Informa una cualidad del estudiante para hacer cálculos estadísticos y medidas de tendencia central."
     }
   ]
 }
